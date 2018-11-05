@@ -6,4 +6,4 @@ Included here are configuration files for various Datadog-agent integrations.
 `/etc/datadog-agent/conf.d/<integragration.d>/integration.yaml`
 
 e.g.
-`/etc/datadog-agent/conf.d/tomcat.d/tomcat.yaml
+`/etc/datadog-agent/conf.d/tomcat.d/tomcat.yaml`
