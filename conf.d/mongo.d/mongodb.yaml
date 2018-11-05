@@ -1,0 +1,31 @@
+# For cps-vivo-test replicaSet
+init_config:
+
+instances:
+  - server: mongodb://datadog:JJEl5aMEDF4WWV5IfZKhihFE@mgdb511.test.mongodb.otg.bbc.co.uk:36035,mgdb510.test.mongodb.otg.bbc.co.uk:36035,mgdb113.test.mongodb.otg.bbc.co.uk:36035/admin
+
+    # tags:
+    #   - mongo-cps-vivo-test
+
+    replicaSet: cps-test
+    replica_check: true
+
+    ssl: True
+    ssl_keyfile: /etc/ssl/mgdb510.test.mongodb.otg.bbc.co.uk.pem
+    # ssl_certfile: /etc/ca/development-server-services-chain.pem
+    ssl_ca_certs: /etc/ca/development-server-services-chain.pem
+
+
+
+
+# For Reith replicaSet
+init_config:
+
+instances:
+  - server: mongodb://datadog:JJEl5aMEDF4WWV5IfZKhihFE@mgdb201.prod.lbh.newsonline.tc.nca.bbc.co.uk:36035,mgdb202.prod.lbh.newsonline.tc.nca.bbc.co.uk:36035,mgdb203.prod.lbh.newsonline.tc.nca.bbc.co.uk:36035/admin
+
+    replicaSet: dst_reith_rs
+    replica_check: true
+
+    # tags:
+    #  - mongo-reith

@@ -1,0 +1,29 @@
+logs:
+  - type: file
+    path: /xstore/Logs/8001_AccessLog.txt
+    service: MarkLogic
+    source: marklogic
+  - type: file
+    path: /xstore/Logs/9004_AccessLog.txt
+    service: MarkLogic
+    source: marklogic
+  - type: file
+    path: /xstore/Logs/9008_AccessLog.txt
+    service: MarkLogic
+    source: marklogic
+  - type: file
+    path: /xstore/Logs/9104_AccessLog.txt
+    service: MarkLogic
+    source: marklogic
+  - type: file
+    path: /xstore/Logs/9210_AccessLog.txt
+    service: MarkLogic
+    source: marklogic
+  - type: file
+    path: /xstore/Logs/9308_AccessLog.txt
+    service: MarkLogic
+    source: marklogic
+  - type: file
+    path: /xstore/Logs/ErrorLog.txt
+    service: MarkLogic
+    source: marklogic
