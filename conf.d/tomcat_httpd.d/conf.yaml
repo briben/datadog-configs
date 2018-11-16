@@ -1,0 +1,5 @@
+logs:
+  - type: file
+    path: /data/app-logs/httpd-api-gw/access_log
+    service: tomcat_httpd
+    source: custom
