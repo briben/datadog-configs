@@ -7,3 +7,20 @@ Included here are configuration files for various Datadog-agent integrations.
 
 e.g.
 `/etc/datadog-agent/conf.d/tomcat.d/tomcat.yaml`
+
+If adding a Log collection: 
+* Edit datadog.yaml: `sudo vi /etc/datadog-agent/datadog.yaml`
+* Change the line: `# logs_enabled: false` to `logs_enabled: true`
+* Save the file 
+
+After configuring the integration(s)/log collections, restart the Datadog agent
+
+**RHEL 6**
+`$ sudo restart datadog-agent`
+
+**RHEL 7**
+`$ sudo systemctl datadog-agent restart`
+
+_OR_
+
+`$ sudo service datadog-agent restart`
