@@ -2,7 +2,7 @@
 Datadog collects various metrics on systems, services and apps.
 Included here are configuration files for various Datadog-agent integrations.
 
-## Installation directoy
+## Integration directory
 `/etc/datadog-agent/conf.d/<integration>.d/<integration>.yaml`
 
 e.g.
@@ -16,17 +16,17 @@ If adding a custom log collection e.g. `conf.d/tomcat_httpd.d/tomcat_http.yaml`:
 
 
 ## Restarting the Datadog agent
-After configuring the integration(s)/log collection(s), restart the Datadog agent
+After configuring the integration(s)/log collection(s), restart the Datadog agent:
 
 
 ### RHEL 6
 
-`$ sudo restart datadog-agent`
+* `$ sudo restart datadog-agent`
 
 ### RHEL 7
 
-`$ sudo systemctl datadog-agent restart`
+* `$ sudo systemctl datadog-agent restart`
 
 _OR_
 
-`$ sudo service datadog-agent restart`
+* `$ sudo service datadog-agent restart`
