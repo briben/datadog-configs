@@ -96,7 +96,7 @@ init_config:
 
 ## Log Section (Available for Agent >=6.0)
 
-#logs:
+logs:
 
     # - type : (mandatory) type of log input source (tcp / udp / file)
     #   port / path : (mandatory) Set port if type is tcp or udp. Set path if type is file
@@ -105,7 +105,7 @@ init_config:
     #   sourcecategory : (optional) Multiple value attribute. Can be used to refine the source attribute
     #   tags: (optional) add tags to each logs collected
 
-    # - type: file
-    #   path: /var/log/tomcat/*.log
-    #   source: tomcat
-    #   service: myservice
+  - type: file
+    path: /data/app-logs/httpd-api-gw/access_log
+    source: tomcat
+    service: httpd-api-gw
